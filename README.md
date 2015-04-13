@@ -17,3 +17,5 @@ Example:
     	fmt.Printf(text + ": " + slugify.Slugify(text))
     }
 
+
+[Documentation](http://godoc.org/github.com/avelino/slugify)
