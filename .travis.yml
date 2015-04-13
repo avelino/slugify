@@ -1,0 +1,8 @@
+language: go
+
+install: go get github.com/avelino/slugify
+
+script: go test
+
+notifications:
+  on_success: "never"
