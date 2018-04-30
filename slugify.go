@@ -1,8 +1,10 @@
 package slugify
 
 import (
-	"golang.org/x/text/unicode/norm"
+	"fmt"
 	"unicode"
+
+	"golang.org/x/text/unicode/norm"
 )
 
 var SKIP = []*unicode.RangeTable{
@@ -40,4 +42,9 @@ func Slugify(text string) string {
 		buf = buf[:i]
 	}
 	return string(buf)
+}
+
+// Slugifyf slugfy a formated string
+func Slugifyf(format string, a ...interface{}) string {
+	return Slugify(fmt.Sprintf(format, a...))
 }
