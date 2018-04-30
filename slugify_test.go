@@ -9,6 +9,7 @@ var tests = []struct{ in, out string }{
 	{"I'm go developer", "i-m-go-developer"},
 	{"Simples código em go", "simples-codigo-em-go"},
 	{"日本語の手紙をテスト", "日本語の手紙をテスト"},
+	{"--->simple test<---", "simple-test"},
 }
 
 func TestSlugify(t *testing.T) {
