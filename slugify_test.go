@@ -22,10 +22,8 @@ func TestSlugify(t *testing.T) {
 
 func TestSlugifyf(t *testing.T) {
 	for _, test := range tests {
-		t.Run(test.out, func(t *testing.T) {
-			if out := Slugifyf("%s", test.in); out != test.out {
-				t.Errorf("%q: %q != %q", test.in, out, test.out)
-			}
-		})
+		if out := Slugifyf("%s", test.in); out != test.out {
+			t.Errorf("%q: %q != %q", test.in, out, test.out)
+		}
 	}
 }
